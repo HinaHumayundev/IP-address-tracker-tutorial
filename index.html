@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>IP Address Tracker</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/jpg" href="images/Globe_logo.jpg">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <div class="main">
+      <p class="heading">
+        IP Address Tracker
+      </p>
+
+      <div class="search">
+        <input type="text" id="ip" placeholder="Enter IP Address">
+        <button id="go">Go!</button>
+      </div>
+
+      <div class="details">
+        <div  class="border-right">
+          IP ADDRESS <br>
+          <p class="ip out">..waiting</p>
+        </div>
+
+        <div  class="border-right">
+          LOCATION<br>
+          <p class="add out">..waiting</p>
+        </div>
+
+        <div  class="border-right">
+          TIMEZONE <br>
+          <p class="timezone out">..waiting</p>
+        </div>
+
+        <div class="border-right">
+         Orgnization<br>
+          <p class="cc out">...waiting</p>
+        </div>
+      </div>
+    </div>
+    <!-- container to show map -->
+    <div id="map"></div>
+</body>
+</html>
